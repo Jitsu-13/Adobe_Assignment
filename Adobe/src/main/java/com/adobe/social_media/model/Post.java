@@ -23,9 +23,10 @@ public class Post {
     @Size(min = 1,max = 3000,message = "Max allowed characters are 300")
     @NotEmpty @NotBlank
     private String content;
+    @Column(nullable = false, updatable = false)
     private LocalDateTime created_at;
+    @Column(nullable = false)
     private LocalDateTime updated_at;
-    @Positive(message = "only non-negative numbers accepted")
     private Integer likes;
 
 

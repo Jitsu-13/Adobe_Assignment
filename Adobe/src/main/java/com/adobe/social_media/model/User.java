@@ -9,6 +9,8 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -27,11 +29,9 @@ public class User {
     private String email;
     @Size(max = 200,message = "Bio should be less than 200 characters")
     private String bio;
-    @Temporal(TemporalType.TIMESTAMP)
-    private LocalDateTime created_at;
-    private LocalDateTime updated_at;
+    @Column(nullable = false,updatable = false)
+    private Instant created_at;
+    @Column(nullable = false)
+    private Instant updated_at;
 
-    @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Post> posts;
 }
