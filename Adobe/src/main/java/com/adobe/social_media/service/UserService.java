@@ -15,6 +15,6 @@ public interface UserService {
 
     public Integer getTotalUsers();
 
-    public List<User> getTopActiveUsers(int limit);
+    public List<User> getTopActiveUsers();
 
 }

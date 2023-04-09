@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
@@ -24,9 +25,9 @@ public class Post {
     @NotEmpty @NotBlank
     private String content;
     @Column(nullable = false, updatable = false)
-    private LocalDateTime created_at;
+    private Instant created_at;
     @Column(nullable = false)
-    private LocalDateTime updated_at;
+    private Instant updated_at;
     private Integer likes;
 
 

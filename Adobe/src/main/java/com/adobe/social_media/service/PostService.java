@@ -14,11 +14,11 @@ public interface PostService {
 
     public void deletePost(Integer id);
 
-    public void like(Integer id);
+    public void incrementLikes(Integer id);
 
-    public void disLike(Integer id);
+    public void decrementLikes(Integer id);
 
-    public List<Post> getTopLikedPosts(int limit);
+    public List<Post> getTopLikedPosts();
 
     public Integer getTotalPosts();
 
