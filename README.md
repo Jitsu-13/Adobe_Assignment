@@ -36,5 +36,29 @@ Result
 <img src="https://user-images.githubusercontent.com/107523890/230822499-13eee0cf-c944-4819-8aec-32f257b1e5be.png"/>
 
 ## Post End-points-
+<li> To Create Post :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230828002-5d761671-642f-4d8a-91db-cee8a2b3b284.png"/>
+<img src="https://user-images.githubusercontent.com/107523890/230828095-60c24b32-8d1e-4d6d-8c15-d759efa8a85a.png"/>
+
+<li> To Get Post By ID :</li>
+Query
+<img src="https://user-images.githubusercontent.com/107523890/230832160-1649ca64-e9f9-4563-aa23-ee46a76e6dc3.png"/>
+
+
+<li> To Update Post By ID :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230832429-eacb502d-8f95-445e-a9e8-7b03ecc6e906.png"/>
+
+
+<li> To Delete Post By ID :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230832556-64ee7cf3-c58f-45c4-ba3d-418b8a0f62b5.png"/>
+
+
+<li> Analytics - To get total Post :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230832719-20912695-dc49-4bbb-a7b5-a488eb908e45.png"/>
+
+
+<li> Analytics - To get top 5 Liked Posts</li>
+<img src="https://user-images.githubusercontent.com/107523890/230832893-5959d073-53ce-472c-8b6d-855016ca0bb4.png"/>
+
 
 
