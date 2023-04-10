@@ -52,10 +52,14 @@ Query
 <li> To Delete Post By ID :</li>
 <img src="https://user-images.githubusercontent.com/107523890/230832556-64ee7cf3-c58f-45c4-ba3d-418b8a0f62b5.png"/>
 
+<li> To Like Post By ID :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230833245-070c50ba-3952-420e-be84-90eb196f1252.png"/>
+
+<li> To DisLike Post By ID :</li>
+<img src="https://user-images.githubusercontent.com/107523890/230833406-d56a9477-1065-4fb1-a86c-925f4cec8944.png"/>
 
 <li> Analytics - To get total Post :</li>
 <img src="https://user-images.githubusercontent.com/107523890/230832719-20912695-dc49-4bbb-a7b5-a488eb908e45.png"/>
-
 
 <li> Analytics - To get top 5 Liked Posts</li>
 <img src="https://user-images.githubusercontent.com/107523890/230832893-5959d073-53ce-472c-8b6d-855016ca0bb4.png"/>
