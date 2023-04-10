@@ -14,9 +14,9 @@ public interface PostService {
 
     public void deletePost(Integer id);
 
-    public void incrementLikes(Integer id);
+    public Post incrementLikes(Integer id);
 
-    public void decrementLikes(Integer id);
+    public Post decrementLikes(Integer id);
 
     public List<Post> getTopLikedPosts();
 

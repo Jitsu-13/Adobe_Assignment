@@ -46,5 +46,8 @@ public class UserServiceImpl implements UserService{
     @Override
     public List<User> getTopActiveUsers() {
         return userRepository.findTop5ByOrderByPostsDesc();
+
+//        return null;
     }
+
 }

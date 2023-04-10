@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor @Getter
 @Setter
 @Entity
+@Table(name = "posts")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

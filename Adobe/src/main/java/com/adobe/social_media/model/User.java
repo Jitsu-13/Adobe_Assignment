@@ -16,6 +16,7 @@ import java.util.List;
 
 @Data @AllArgsConstructor @NoArgsConstructor @Getter @Setter
 @Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,5 +34,8 @@ public class User {
     private Instant created_at;
     @Column(nullable = false)
     private Instant updated_at;
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+    List<Post> posts;
 
 }

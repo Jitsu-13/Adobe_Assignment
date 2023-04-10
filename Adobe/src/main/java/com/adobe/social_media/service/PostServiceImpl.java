@@ -43,24 +43,26 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public void incrementLikes(Integer id) {
+    public Post incrementLikes(Integer id) {
         Post post=postRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Post","id",id));
         post.setLikes(post.getLikes()+1);
-        postRepository.save(post);
+        return postRepository.save(post);
     }
 
     @Override
-    public void decrementLikes(Integer id) {
+    public Post decrementLikes(Integer id) {
         Post post= postRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Post","id",id));
         int likes=post.getLikes()-1;
         post.setLikes(likes>=0 ? likes:0);
-        postRepository.save(post);
+        return postRepository.save(post);
     }
 
     @Override
     public List<Post> getTopLikedPosts() {
         return postRepository.findTop5ByOrderByLikesDesc();
+//        return null;
     }
+
 
 
     @Override
